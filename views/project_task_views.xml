@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+    <record id="view_task_form" model="ir.ui.view">
+      <field name="name">project.task.form</field>
+      <field name="model">project.task</field>
+      <field name="inherit_id" ref="project.view_task_form2"/>
+      <field name="arch" type="xml">
+        <xpath expr="//notebook/page[@name='description_page']" position="after">
+          <page string="Project Details" name="project_details">
+            <group class="oe_group_col">
+              <group>
+                <field name="project_id" invisible="1"/>
+                <field name="type" />
+                <field name="is_international" />
+                <field name="product_id"/> 
+              </group>
+              <group>
+                <field name="is_security"/> 
+                <field name="project_date"/> 
+                <field name="project_code"/> 
+                <field name="contact_person_id"/>
+                </group>       
+            </group>
+          </page>
+        </xpath>
+        </field>
+        </record>
+  </data>
+</odoo>

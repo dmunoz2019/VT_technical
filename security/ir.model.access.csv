@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_deplog_project_ext_deplog_project_ext,deplog_project_ext.deplog_project_ext,model_deplog_project_ext_deplog_project_ext,base.group_user,1,1,1,1
